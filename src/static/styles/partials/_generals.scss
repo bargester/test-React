@@ -1,0 +1,125 @@
+.button{
+  box-shadow: inset 0 -3px 0 #736357;
+  border-radius: 3px;
+  background-color: $color-crime-button;
+  color: #ffffff;
+  font-family: Relaway, serif;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 52px;
+  text-transform: uppercase;
+  text-align: center;
+  transition: .2s;
+  transform-origin: center;
+  &:hover{
+    background-color: darken($color-crime-button, 10%);
+  }
+}
+
+.common{
+  &__title{
+    max-width: 500px;
+    width: 100%;
+    color: $color-gray;
+    font-family: Raleway, serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0 auto 20px;
+    text-align: center;
+  }
+  &__subtitle{
+    max-width: 760px;
+    width: 100%;
+    color: #8c8c8c;
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 28px;
+    margin: 0 auto 40px;
+    text-align: center;
+  }
+}
+
+.slick-slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  .slick-slide {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("../img/general/intro-s__bg.jpg") no-repeat center;
+    background-size: cover;
+
+    &--abstraction {
+      background: url("../img/general/intro-s__bg-2.jpg") no-repeat center;
+      background-size: cover;
+    }
+  }
+
+    .slick-arrow{
+      height: 73px;
+      width: 43px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 98;
+      background: url("../img/svg/slick-arrow.svg") no-repeat center;
+      font-size: 0;
+      border: none;
+      transition: .3s;
+      &:hover{
+        background: url("../img/svg/slick-arrow--hover.svg") no-repeat center;
+      }
+    }
+    .slick-next{
+      right: 15px;
+      transform: translateY(-50%) rotate(180deg);
+    }
+    .slick-prev{
+      left: 15px;
+    }
+  .slick-dots {
+    position: absolute;
+    bottom: 42px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    z-index: 98;
+
+    & li button {
+      height: 11px;
+      width: 11px;
+      border: none;
+      border-radius: 50%;
+      margin: 0 5px;
+      font-size: 0;
+      background-color: #969494;
+    }
+
+    .slick-active button {
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      margin: 0 5px;
+      font-size: 0;
+      background-color: transparent;
+      border: 1px solid $color-crime-button;
+    }
+  }
+
+
+  &:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#000, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}

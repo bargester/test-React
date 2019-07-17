@@ -1,0 +1,24 @@
+//libs
+@import "libs/reset";
+@import "../../../node_modules/slick-carousel/slick/slick.scss";
+@import "libs/fonts";
+@import "libs/bootstrap-grid.min";
+
+//Partials
+@import "partials/keyframes";
+@import "partials/variable";
+@import "partials/mixins";
+@import "partials/media";
+@import "partials/generals";
+
+//Pages
+@import "components/header";
+@import "components/intro-s";
+@import "components/services-s";
+@import "components/realization-s";
+@import "components/wordpress-theme-s";
+@import "components/projects-s";
+@import "components/counter-s";
+@import "components/excellent-s";
+@import "components/partners-s";
+@import "components/footer";

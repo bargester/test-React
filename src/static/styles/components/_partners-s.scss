@@ -1,0 +1,17 @@
+.partners-s{
+  padding: 99px 0;
+  background: url("../img/general/partners-s-bg.jpg") no-repeat center;
+  background-size: cover;
+  &__list-item{
+    margin-bottom: 20px;
+  }
+  &__link{
+    display: block;
+    margin: 0 auto;
+  }
+  &__img{
+    display: block;
+    max-width: 200px;
+    width: 100%;
+  }
+}

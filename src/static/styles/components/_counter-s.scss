@@ -1,0 +1,47 @@
+.counter-s{
+  background-color: #4e3427;
+  background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+  padding: 69px 0 30px;
+  &__list-item{
+    position: relative;
+    padding-bottom: 35px;
+    margin-bottom: 30px;
+    &:after{
+      content: "";
+      position: absolute;
+      bottom: 5px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 30px;
+      height: 2px;
+      background-color: $color-white;
+    }
+  }
+  &__icon{
+    display: block;
+    fill: $color-crime;
+    margin: 0 auto 20px;
+  }
+  &__title{
+    color: $color-white;
+    font-family: Montserrat, sans-serif;
+    font-size: 48px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 8px;
+    opacity: 0;
+  }
+  &__text{
+    color: $color-crime;
+    font-family: Montserrat, sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.viz {
+  opacity: 1;
+  transition: 1s;
+}

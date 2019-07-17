@@ -1,0 +1,58 @@
+.realization-s {
+  background-color: #fbfaf8;
+  padding-top: 82px;
+  &__wrapper{
+    position: relative;
+    padding-bottom: 480px;
+  }
+  &__img{
+    bottom: 0;
+    display: block;
+    max-width: 770px;
+    width: 100%;
+    position: absolute;
+    &--center{
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 3;
+    }
+    &--left{
+      bottom: 0;
+      left: -30px;
+      z-index: 1;
+    }
+    &--right{
+      bottom: 0;
+      right: -30px;
+      z-index: 2;
+
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .realization-s__wrapper{
+      padding-bottom: 360px;
+  }
+  .realization-s__img{
+    max-width: 620px;
+    &--left{
+      display: none;
+    }
+    &--right{
+     display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 520px){
+  .realization-s__wrapper{
+    padding-bottom: 280px;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .realization-s__wrapper{
+    padding-bottom: 200px;
+  }
+}
